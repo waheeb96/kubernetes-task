@@ -27,7 +27,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bitcoi-service
+  name: bitcoin-service
 spec:
   selector:
     app: bitcoin
