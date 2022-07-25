@@ -24,6 +24,6 @@ spec:
               service:
                 name: news-parser-service
                 port:
-                  number: 8080
+                  number: 5000
 
                 
