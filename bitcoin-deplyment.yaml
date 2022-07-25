@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: bitcoin
-          image: waheeb96/bitcoin-tracker
+          image: waheeb96/bitcoin-tracker:latest
           ports:
             - containerPort: 5000
 
