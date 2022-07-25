@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: news-parser
-        image: waheeb96/news-parser
+        image: waheeb96/news-parser:latest
         ports:
          - containerPort: 5000
 
