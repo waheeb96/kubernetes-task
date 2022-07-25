@@ -1,0 +1,29 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bitcoin-news-parser-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /bitcoin
+            pathType: Prefix
+            backend:
+              service:
+                name: bitcoin-service
+                port:
+                  number: 5000
+    - http:
+        paths:
+          - path: /news-parser
+            pathType: Prefix
+            backend:
+              service:
+                name: news-parser-service
+                port:
+                  number: 8080
+
+                
