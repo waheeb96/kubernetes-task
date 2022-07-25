@@ -35,7 +35,7 @@ spec:
     - protocol: TCP
       port: 5000
       targetPort: 5000
-  type: ClusterIP
+  type: NodePort
 
 ---
 # redis Deployment
@@ -84,7 +84,7 @@ spec:
     - protocol: TCP
       port: 6379
       targetPort: 6379
-  type: ClusterIP
+  type: NodePort
 
 ---
 # pv of redis
